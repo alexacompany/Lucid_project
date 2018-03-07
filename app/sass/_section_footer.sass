@@ -1,0 +1,63 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+.footer
+	padding: 50px 15px 40px
+	background-color: $bgcdark
+	.wrapper
+		text-align: center
+		.social
+			display: flex
+			justify-content: center
+			margin-bottom: 5px
+			.item_social
+				width: 30px
+				height: 30px
+				margin-right: 16px
+				transition: all 0.3s ease
+				&:last-child
+					margin-right: 0
+				&:hover
+					color: $blue
+				.fa
+					font-family: fontawesome-webfont
+					font-size: 16px
+					color: $dark_gray
+		.copy
+			.copy_text
+				font-family: SourceSansPro-SemiBold, sans-serif
+				font-size: 14px
+				color: $dark_gray
+				text-transform: uppercase
+
+@media only screen and (max-width : 1024px)
+	.footer
+		padding: 30px 15px
+@media only screen and (max-width : 480px)
+	.footer
+		padding: 20px 15px
+		.wrapper
+			.social
+				.item_social
+					width: 25px
+					height: 25px
+					font-size: 14px
+					margin-right: 12px
+			.copy
+				.copy_text
+					font-size: 12px
+@media only screen and (max-width : 320px)
+	.footer
+		padding: 15px 15px
+		.wrapper
+			.social
+				.item_social
+					width: 20px
+					height: 20px
+					font-size: 12px
+					margin-right: 12px
+			.copy
+				.copy_text
+					font-size: 10px

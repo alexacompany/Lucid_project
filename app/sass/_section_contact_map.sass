@@ -1,0 +1,252 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+.contact
+	padding: 60px 15px 0
+	background-color: $bgcgray
+	.wrapper
+		height: 700px
+		position: relative
+		.section_title
+			display: flex
+			justify-content: center
+			margin-bottom: 70px
+			.title_row
+				text-align: center
+				.title
+					font-family: SourceSansPro-SemiBold, sans-serif
+					font-size: 14px
+					text-shadow: 2px 4px 10px rgba(78, 79, 84, .4)
+					color: $blue
+					text-transform: uppercase
+					margin-bottom: 20px
+				.text
+					font-family: SourceSansPro-SemiBold, sans-serif
+					font-size: 36px
+					text-shadow: 2px 3px 10px rgba(78, 79, 84, .5)
+					color: $tdark
+					margin-bottom: 30px
+				.line
+					display: flex
+					justify-content: center
+					width: 100%
+					.line_left,
+					.line_right
+						width: 20px
+						height: 2px
+						background-color: $blue
+						box-shadow: 2px 3px 12px rgba(78, 79, 84, .3)
+					.line_left
+						margin-right: 2px
+		.section_adress
+			display: flex
+			justify-content: space-around
+			flex-wrap: wrap
+			.item
+				width: 33%
+				text-align: center
+				.icon
+					width: 100%
+					height: 40px
+					margin-bottom: 25px
+				.text
+					font-family: SourceSansPro-Regular, sans-serif
+					font-size: 18px
+					color: $tgray
+					line-height: 1.4
+		.overlay
+			position: fixed
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			background-color: rgba(21, 20, 26, .7)
+			display: none
+			z-index: 10
+			.popup
+				position: fixed
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+				padding: 40px;
+				color: #fff
+				.text
+					font-family: SourceSansPro-Bold, sans-serif
+					font-size: 30px
+					color: #fff
+					text-align: center
+					line-height: 1.6
+					letter-spacing: 1.5px
+		.section_form
+			padding: 60px 85px 40px 65px
+			width: 770px
+			background-color: $bgcdark
+			position: absolute
+			bottom: -60px
+			left: 50%
+			transform: translateX(-50%)
+			.form
+				display: flex
+				.container_left
+					margin-right: 25px
+					height: 190px
+					display: flex
+					flex-direction: column
+					justify-content: space-between
+					width: 45%
+					input
+						padding-left: 20px
+						width: 100%
+						height: 50px
+						background-color: transparent
+						outline:none
+						border: 1px solid $dark_gray
+						color: $tgray
+				.container_right
+					width: 50%
+					text-align: right
+					textarea
+						padding: 20px
+						margin-bottom: 20px
+						width: 100%
+						height: 190px
+						color: $tgray
+						background-color: transparent
+						outline:none
+						border: 1px solid $dark_gray
+					input
+						padding: 17px 30px
+						text-align: right
+						background-color: transparent
+						font-family: SourceSansPro-Bold, sans-serif
+						font-size: 14px
+						cursor: pointer
+						text-transform: uppercase
+						color: $blue
+						outline: none
+						border: 1px solid $dark_gray
+						border-radius: 5px
+						transition: all 0.5s ease
+						&:hover
+							background-color: $blue
+							color: $white
+							border-color: transparent
+						&:active
+							padding: 17px 30px
+							border: 1px solid $dark_gray
+							border-radius: 5px
+							background-color: $blue
+							color: $white
+							border-color: transparent
+
+@media only screen and (max-width : 1024px)
+	.contact
+		padding: 40px 15px
+		.wrapper
+			height: 650px
+@media only screen and (max-width : 768px)
+	.contact
+		.wrapper
+			height: 600px
+			.section_form
+				padding: 30px
+				width: 100%
+	.map
+		.section_map
+			iframe
+				height: 300px
+@media only screen and (max-width : 480px)
+	.contact
+		padding-bottom: 0
+		.wrapper
+			height: 760px
+			.section_title
+					margin-bottom: 30px
+					.title_row
+						.title
+							font-size: 12px
+							margin-bottom: 15px
+						.text
+							font-size: 28px
+							margin-bottom: 20px
+			.section_adress
+				.item
+					width: 50%
+					margin-bottom: 20px
+					.icon
+						width: 100%
+						height: 25px
+						margin-bottom: 15px
+					.text
+						font-size: 14px
+			.section_form
+				padding: 20px
+				bottom: 0
+				.form
+					flex-wrap: wrap
+					font-size: 12px
+					.container_left
+						justify-content: center
+						margin-right: 0
+						width: 100%
+						input
+							margin-bottom: 20px
+							padding-left: 20px
+							height: 35px
+					.container_right
+						width: 100%
+						textarea
+							padding: 15px
+							margin-bottom: 15px
+							height: 150px
+						input
+							padding: 15px 20px
+							font-size: 12px
+	.map
+		.section_map
+			iframe
+				height: 250px
+@media only screen and (max-width : 320px)
+	.contact
+		padding: 15px 15px 0
+		.wrapper
+			height: 660px
+			.section_title
+				margin-bottom: 15px
+				.title_row
+					.title
+						margin-bottom: 15px
+						font-size: 10px
+					.text
+						margin-bottom: 15px
+						font-size: 20px
+			.section_adress
+				.item
+					.text
+						font-size: 12px
+			.section_form
+				padding: 20px
+				bottom: 0
+				.form
+					font-size: 12px
+					.container_left
+						justify-content: center
+						margin-right: 0
+						width: 100%
+						input
+							margin-bottom: 20px
+							padding-left: 20px
+							height: 35px
+					.container_right
+						textarea
+							padding: 15px
+							height: 120px
+						input
+							padding: 12px 15px
+							font-size: 12px
+	.map
+		.section_map
+			iframe
+				height: 200px

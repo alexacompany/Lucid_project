@@ -1,0 +1,271 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+.price
+	padding: 60px 15px
+	.wrapper
+		.section_title
+			display: flex
+			justify-content: center
+			margin-bottom: 70px
+			.title_row
+				text-align: center
+				.title
+					font-family: SourceSansPro-SemiBold, sans-serif
+					font-size: 14px
+					text-shadow: 2px 4px 10px rgba(78, 79, 84, .4)
+					color: $blue
+					text-transform: uppercase
+					margin-bottom: 20px
+				.text
+					font-family: SourceSansPro-SemiBold, sans-serif
+					font-size: 36px
+					text-shadow: 2px 3px 10px rgba(78, 79, 84, .5)
+					color: $tdark
+					margin-bottom: 30px
+				.line
+					display: flex
+					justify-content: center
+					width: 100%
+					.line_left,
+					.line_right
+						width: 20px
+						height: 2px
+						background-color: $blue
+						box-shadow: 2px 3px 12px rgba(78, 79, 84, .3)
+					.line_left
+						margin-right: 2px
+		.section_price
+			.container_item
+				display: flex
+				justify-content: space-between
+				flex-wrap: wrap
+				.item
+					width: calc(25% - 30px)
+					border: 1px solid #e0e0e0
+					border-radius: 4px
+					position: relative
+					&:hover
+						box-shadow: 3px 7px 18px rgba(73, 77, 80, .2)
+					&:hover .item_price
+						background-color: $blue
+					&:hover .item_price .text_price
+						color: $white
+					&:hover .item_price .p_month
+						color: $white
+					&:hover .item_button .button
+						background-color: $blue
+						color: $white
+					.item_title
+						display: flex
+						justify-content: center
+						align-items: center
+						height: 70px
+						border-bottom: 1px solid #e0e0e0
+						.text_title
+							font-family: SourceSansPro-Bold, sans-serif
+							font-size: 24px
+							color: $tdark
+							text-transform: uppercase
+					.item_price
+						display: flex
+						flex-direction: column
+						justify-content: center
+						align-items: center
+						height: 150px
+						border-bottom: 1px solid #e0e0e0
+						text-align: center
+						transition: all 0.5s ease
+						.text_price
+							font-family: SourceSansPro-SemiBold, sans-serif
+							font-size: 60px
+							color: $tdark
+							.sup
+								font-family: SourceSansPro-Regular, sans-serif
+								font-size: 34px
+						.p_month
+							font-family: SourceSansPro-SemiBold, sans-serif
+							font-size: 18px
+							color: $tgray
+					.item_text
+						padding: 50px 30px 125px 30px
+						text-align: center
+						.text
+							font-family: SourceSansPro-Regular, sans-serif
+							font-size: 18px
+							color: $tgray
+							line-height: 1.4
+							.blue_text
+								font-family: SourceSansPro-Regular, sans-serif
+								font-size: 18px
+								color: $blue
+								cursor: pointer		
+					.item_button
+						padding: 45px 0 30px
+						width: 140px
+						position: absolute
+						bottom: 0
+						left: 50%
+						transform: translateX(-50%)
+						.button
+							padding: 17px 30px
+							background-color: transparent
+							font-family: SourceSansPro-Bold, sans-serif
+							font-size: 14px
+							cursor: pointer
+							text-transform: uppercase
+							color: $blue
+							outline: none
+							border: 1px solid #e0e0e0
+							border-radius: 5px
+							transition: all 0.5s ease
+@media only screen and (max-width : 1170px)
+	.price
+		.wrapper
+			.section_price
+				.container_item
+					justify-content: space-around
+					.item
+						width: calc(33% - 30px)
+						margin-bottom: 30px
+@media only screen and (max-width : 1024px)
+	.price
+		padding: 40px 15px
+@media only screen and (max-width : 768px)
+	.price
+		.wrapper
+			.section_price
+				.container_item
+					.item
+						width: calc(50% - 30px)
+						margin-bottom: 30px
+@media only screen and (max-width : 480px)
+	.price
+		.wrapper
+			.section_title
+					margin-bottom: 30px
+					.title_row
+						.title
+							font-size: 12px
+							margin-bottom: 15px
+						.text
+							font-size: 28px
+							margin-bottom: 20px
+			.section_price
+				.container_item
+					.item
+						width: 70%
+						margin-bottom: 20px
+						.item_title
+							height: 50px
+							.text_title
+								font-size: 18px
+						.item_price
+							height: 100px
+							.text_price
+								font-size: 40px
+								.sup
+									font-size: 24px
+							.p_month
+								font-size: 14px
+						.item_text
+							padding: 20px 30px 100px
+							.text
+								font-size: 14px
+								.blue_text
+									font-size: 14px
+						.item_button
+							padding: 25px 0
+							width: 110px
+							position: absolute
+							bottom: 0
+							left: 50%
+							transform: translateX(-50%)
+							.button
+								padding: 15px 20px
+								font-size: 12px
+								border-radius: 4px
+@media only screen and (max-width : 400px)
+	.price
+		.wrapper
+			.section_price
+				.container_item
+					.item
+						width: 80%
+						margin-bottom: 15px
+						.item_title
+							height: 50px
+							.text_title
+								font-size: 18px
+						.item_price
+							height: 100px
+							.text_price
+								font-size: 40px
+								.sup
+									font-size: 24px
+							.p_month
+								font-size: 14px
+						.item_text
+							padding: 15px 15px 110px
+							.text
+								font-size: 14px
+								.blue_text
+									font-size: 14px
+						.item_button
+							padding: 25px 0
+							position: absolute
+							bottom: 0
+							left: 50%
+							transform: translateX(-50%)
+							.button
+								width: 100%
+								padding: 12px 15px
+								font-size: 12px
+@media only screen and (max-width : 320px)
+	.price
+		padding: 15px 15px
+		.wrapper
+			.section_title
+				margin-bottom: 15px
+				.title_row
+					.title
+						margin-bottom: 15px
+						font-size: 10px
+					.text
+						margin-bottom: 15px
+						font-size: 20px
+			.section_price
+				.container_item
+					.item
+						width: 90%
+						margin-bottom: 15px
+						.item_title
+							height: 50px
+							.text_title
+								font-size: 18px
+						.item_price
+							height: 100px
+							.text_price
+								font-size: 40px
+								.sup
+									font-size: 24px
+							.p_month
+								font-size: 14px
+						.item_text
+							padding: 20px 30px 100px
+							.text
+								font-size: 14px
+								.blue_text
+									font-size: 14px
+						.item_button
+							padding: 25px 0
+							width: 120px
+							position: absolute
+							bottom: 0
+							left: 50%
+							transform: translateX(-50%)
+							.button
+								padding: 12px 15px
+								font-size: 12px

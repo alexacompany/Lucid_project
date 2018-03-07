@@ -1,0 +1,246 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+.slide_section
+	background-color: $bgcdark
+	.pricings_row
+		background: url("../img/bg_pricings.png") no-repeat center center
+		background-size: cover
+		padding: 60px 15px
+		.wrapper
+			.section_title
+				display: flex
+				justify-content: center
+				margin-bottom: 70px
+				.title_row
+					text-align: center
+					.title
+						font-family: SourceSansPro-SemiBold, sans-serif
+						font-size: 14px
+						text-shadow: 2px 3px 10px rgba(221, 189, 255, .4)
+						color: $blue
+						text-transform: uppercase
+						margin-bottom: 20px
+					.text
+						font-family: SourceSansPro-SemiBold, sans-serif
+						font-size: 36px
+						text-shadow: 2px 4px 12px rgba(221, 189, 255, .5)
+						color: $white
+						margin-bottom: 30px
+					.line
+						display: flex
+						justify-content: center
+						width: 100%
+						.line_left,
+						.line_right
+							width: 20px
+							height: 2px
+							background-color: $blue
+							box-shadow: 2px 3px 12px rgba(78, 79, 84, .5)
+						.line_left
+							margin-right: 2px
+			.slider
+				.slider_item
+					display: flex
+					margin-bottom: 135px
+					.container_item
+						margin-right: 35px
+						.text
+							font-family: SourceSansPro-Italic, sans-serif
+							font-size: 24px
+							line-height: 1.4
+							margin-bottom: 30px
+						.avatar_row
+							display: flex
+							align-items: center
+							.avatar
+								margin-right: 25px
+							.avatar_text
+								.name
+									font-family: SourceSansPro-Regular, sans-serif
+									font-size: 16px
+									line-height: 1.7
+									letter-spacing: 1px
+								.work
+									font-family: SourceSansPro-Bold, sans-serif
+									font-size: 14px
+									text-transform: uppercase
+									line-height: 1.7
+									letter-spacing: 1px
+	.section_footer
+		padding: 60px 15px
+		.wrapper
+			max-width: 1170px
+			width: 100%
+			margin: 0 auto
+			display: flex
+			justify-content: space-between
+			align-items: center
+			.question
+				.text
+					font-family: SourceSansPro-SemiBold, sans-serif
+					font-size: 36px
+					.sub_text
+						font-family: SourceSansPro-Light, sans-serif
+						font-size: 36px
+			.footer_button
+				display: flex
+				.button
+					margin-left: 20px
+					padding: 17px 30px
+					background-color: transparent
+					font-family: SourceSansPro-Bold, sans-serif
+					font-size: 14px
+					cursor: pointer
+					text-transform: uppercase
+					color: $white
+					outline: none
+					border: 1px solid #4e4f54
+					border-radius: 5px
+					transition: all 0.4s ease
+					&:first-child
+						margin-left: 0
+				.button:hover
+					background-color: $blue
+					border-color: transparent
+
+@media only screen and (max-width : 1024px)
+	.slide_section
+		.pricings_row
+			padding: 40px 15px
+			.wrapper
+				.slider
+					.slider_item
+						margin-bottom: 50px
+		.section_footer
+			padding: 30px 15px
+			.wrapper
+				.question
+					.text
+						font-size: 28px
+						.sub_text
+							font-size: 28px
+				.footer_button
+					.button
+						padding: 12px 20px
+						font-size: 12px
+
+@media only screen and (max-width : 768px)
+	.slide_section
+		.pricings_row
+			padding: 40px 15px
+			.wrapper
+				.section_title
+					margin-bottom: 40px
+				.slider
+					.slider_item
+						margin-bottom: 50px
+						.container_item
+							margin-right: 0
+							padding: 0 20px
+							.text
+								font-size: 18px
+							.avatar_row
+								.avatar_text
+									.name
+										font-size: 14px
+										line-height: 1.5
+									.work
+										font-size: 12px
+										line-height: 1.5
+		.section_footer
+			padding: 30px 15px
+			.wrapper
+				flex-direction: column
+				.question
+					margin-bottom: 15px
+					.text
+						font-size: 24px
+						.sub_text
+							font-size: 24px
+				.footer_button
+					.button
+						margin-left: 15px
+						padding: 15px 20px
+						font-size: 12px
+						border-radius: 4px
+@media only screen and (max-width : 480px)
+	.slide_section
+		.pricings_row
+			.wrapper
+				.section_title
+					margin-bottom: 30px
+					.title_row
+						.title
+							font-size: 12px
+							margin-bottom: 15px
+						.text
+							font-size: 28px
+							margin-bottom: 20px
+				.slider
+					.slider_item
+						margin-bottom: 40px
+						.container_item
+							padding: 0 15px
+							.text
+								font-size: 14px
+							.avatar_row
+								.avatar_text
+									.name
+										font-size: 14px
+									.work
+										font-size: 12px
+		.section_footer
+			padding: 15px 15px
+			.wrapper
+				.question
+					.text
+						font-size: 16px
+						.sub_text
+							font-size: 16px
+@media only screen and (max-width : 400px)
+	.slide_section
+		.section_footer
+			padding: 15px 15px
+			.wrapper
+				flex-direction: column
+				.question
+					margin-bottom: 15px
+					.text
+						font-size: 14px
+						.sub_text
+							font-size: 14px
+@media only screen and (max-width : 320px)
+	.slide_section
+		.pricings_row
+			padding: 15px 15px
+			.wrapper
+				.section_title
+					margin-bottom: 15px
+					.title_row
+						.title
+							margin-bottom: 15px
+							font-size: 10px
+						.text
+							margin-bottom: 15px
+							font-size: 20px
+		.slide_section
+			.section_footer
+				padding: 15px 15px
+				.wrapper
+					flex-direction: column
+					.question
+						margin-bottom: 15px
+						.text
+							font-size: 12px
+							.sub_text
+								font-size: 12px
+				.footer_button
+					.button
+						margin-left: 25px
+						padding: 10px 15px
+						font-size: 10px
+						border-radius: 4px
+						letter-spacing: 0.6px

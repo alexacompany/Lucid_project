@@ -1,0 +1,125 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+.beautiful
+	padding: 65px 15px 35px
+	.wrapper
+		.container_row
+			display: flex
+			flex-wrap: wrap
+			.container_left
+				width: 50%
+			.container_right
+				width: 50%
+				.section_title
+					margin-bottom: 30px
+					.title_row
+						.title
+							font-family: SourceSansPro-SemiBold, sans-serif
+							font-size: 14px
+							text-shadow: 2px 3px 10px rgba(78, 79, 84, .4)
+							color: $blue
+							text-transform: uppercase
+							margin-bottom: 20px
+						.text
+							font-family: SourceSansPro-SemiBold, sans-serif
+							font-size: 36px
+							text-shadow: 2px 3px 14px rgba(78, 79, 84, .5)
+							color: $tdark
+							margin-bottom: 30px
+						.line
+							display: flex
+							width: 100%
+							.line_left,
+							.line_right
+								width: 20px
+								height: 2px
+								background-color: $blue
+								box-shadow: 2px 3px 12px rgba(78, 79, 84, .5)
+							.line_left
+								margin-right: 2px
+				.section_info
+					.info_row
+						.text
+							font-size: 18px
+							color: $tgray
+							line-height: 1.5
+							margin-bottom: 35px
+						.item_row
+							display: flex
+							flex-direction: column
+							justify-content: space-between
+							height: 130px
+							.item
+								display: flex
+								.image
+									width: 20px
+									height: 20px
+									text-align: center
+									margin-right: 7px
+								.text_item
+									font-size: 18px
+									color: $tdark
+
+@media only screen and (max-width : 1170px)
+	.beautiful
+		.wrapper
+			.container_row
+				.container_left
+					text-align: center
+					margin-left: 0
+@media only screen and (max-width : 1024px)
+	.beautiful
+		padding: 40px 15px
+@media only screen and (max-width : 768px)
+	.beautiful
+		.wrapper
+			.container_row
+				.container_left
+					width: 100%
+				.container_right
+					width: 100%
+
+@media only screen and (max-width : 480px)
+	.beautiful
+		.wrapper
+			.container_row
+				.container_right
+					.section_title
+						margin-bottom: 30px
+						.title_row
+							.title
+								font-size: 12px
+								margin-bottom: 15px
+							.text
+								font-size: 28px
+								margin-bottom: 20px
+					.section_info
+						.info_row
+							.text
+								font-size: 14px
+								margin-bottom: 20px
+							.item_row
+								.item
+									.text_item
+										font-size: 14px
+@media only screen and (max-width : 400px)
+	.beautiful
+		padding: 20px 15px
+@media only screen and (max-width : 320px)
+	.beautiful
+		padding: 15px 15px
+		.wrapper
+			.container_row
+				.container_right
+					.section_title
+						margin-bottom: 15px
+						.title_row
+							.title
+								margin-bottom: 15px
+								font-size: 10px
+							.text
+								margin-bottom: 15px
+								font-size: 20px
